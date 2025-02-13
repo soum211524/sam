@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Website</title>
+</head>
+<body>
+    <style>
+        .birthday-container {
+            max-width: 100%
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffd1dc, #ffecb3, #e1bee7);
+        }
+        .birthday-title {
+            color: #db4476;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+        .birthday-message {
+            font-size: 1.2em;
+            color: #333;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+        .birthday-cake {
+            font-size: 7em;
+            margin: 20px 0;
+        }
+        .birthday-wishes {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+    </style>
+    <div class="birthday-container">
+        
+        <style>
+            body {
+                background-color: #fff;;
+                min-height: 100vh;
+                margin: 0;
+                padding: 20px;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            
+            /* Add some floating particles in background */
+            .birthday-container::before {
+                content: '🎈';
+                position: fixed;
+                top: -10%;
+                left: 5%;
+                font-size: 20px;
+                animation: float 2s ease-in infinite;
+            }
+            
+            .birthday-container::after {
+                content: '✨';
+                position: fixed;
+                top: 10%;
+                right: 10%;
+                font-size: 25px;
+                animation: float 8s ease-in infinite;
+            .birthday-container::before {
+                content: '🎂';
+                position: fixed;
+                top: 20%;
+                left: 15%;
+                font-size: 22px;
+                animation: float 5s ease-in infinite;
+            }
+            
+            .birthday-container::before {
+                content: '🎁';
+                position: fixed;
+                top: 30%;
+                right: 20%;
+                font-size: 24px;
+                animation: float 6s ease-in infinite;
+            }
+            
+            .birthday-container::before {
+                content: '🎉';
+                position: fixed;
+                top: 40%;
+                left: 25%;
+                font-size: 26px;
+                animation: float 7s ease-in infinite;
+            }
+            
+            .birthday-container::before {
+                content: '🌟';
+                position: fixed;
+                top: 15%;
+                right: 30%;
+                font-size: 23px;
+                animation: float 4s ease-in infinite;
+            }
+            
+            .birthday-container::before {
+                content: '🎈';
+                position: fixed;
+                top: 35%;
+                left: 35%;
+                font-size: 21px;
+                animation: float 3s ease-in infinite;
+            }
+            }
+            
+            @keyframes float {
+                0% { transform: translateY(0) rotate(0deg); }
+                50% { transform: translateY(150px) rotate(180deg); }
+                100% { transform: translateY(0) rotate(360deg); }
+            }
+        </style>
+        
+        <h1 class="birthday-title">🎉 Happy Birthday Vedanshi! 🎉</h1>
+        <div class="birthday-cake">🎂</div>
+        <div class="birthday-wishes">
+            <p class="birthday-message">Today is your special day, and I want to make it extraordinary!</p>
+            <p class="birthday-message">May your day be filled with joy, laughter, and unforgettable moments.</p>
+            <p class="birthday-message">Wishing you all the happiness your heart can hold!</p>
+        </div>
+        <div class="birthday-wishes">
+            <p class="birthday-message">🎈 May all your dreams come true</p>
+            <p class="birthday-message">🎁 Here's to another amazing year ahead</p>
+            <p class="birthday-message">✨ Keep shining bright!</p>
+            <p class="birthday-message">🌟 You deserve all the happiness</p>
+            <p class="birthday-message">🎵 Dance, laugh and celebrate</p>
+            <p class="birthday-message">💝 Sending lots of love and hugs</p>
+            <p class="birthday-message">🌈 May your year be colorful and bright</p>
+            <p class="birthday-message">🎊 Here's to making wonderful memories</p>
+
+        </div>
+    </div>
+    <style>
+        .birthday-container {
+            animation: fadeIn 1s ease-in;
+        }
+        .birthday-title {
+            animation: bounce 1s ease infinite;
+        }
+        .birthday-cake {
+            animation: bounce 2s ease infinite;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .birthday-cake:hover {
+            transform: scale(1.2);
+        }
+        .birthday-wishes {
+            animation: slideIn 1s ease;
+            transition: transform 0.3s ease;
+        }
+        .birthday-wishes:hover {
+            transform: translateY(-5px);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            .birthday-message {
+                opacity: 0;
+                animation: messageAppear 0.5s ease forwards;
+                animation-delay: calc(var(--message-index) * 0.2s);
+                padding: 10px;
+                margin: 8px;
+                border-radius: 15px;
+                background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+                color: white;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+                box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            }
+            @keyframes messageAppear {
+                from {
+                    opacity: 0;
+                    transform: translateX(-30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+            }
+        }
+        /* Photo cards styling */
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .photo-card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+
+        .photo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .photo-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .photo-card h3 {
+            color: #ff4081;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .photo-card p {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        /* Enhanced background */
+        body {
+            background: linear-gradient(135deg, #ffd1dc, #ffecb3, #e1bee7);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Additional decorative elements */
+        .sparkle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: white;
+            animation: twinkle 1.5s infinite;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+    </style>
+    
+    <script>
+        // Add confetti effect
+        document.querySelector('.birthday-cake').addEventListener('click', () => {
+            for(let i = 0; i < 50; i++) {
+                createConfetti();
+            }
+        });
+
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.style.position = 'fixed';
+            confetti.style.width = '10px';
+            confetti.style.height = '10px';
+            confetti.style.backgroundColor = getRandomColor();
+            confetti.style.left = Math.random() * window.innerWidth + 'px';
+            confetti.style.top = '-10px';
+            confetti.style.borderRadius = '50%';
+            document.body.appendChild(confetti);
+
+            const animation = confetti.animate([
+                { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
+                { transform: `translateY(${window.innerHeight}px) rotate(${Math.random() * 360}deg)`, opacity: 0 }
+            ], {
+                duration: 2000 + Math.random() * 1000,
+                easing: 'cubic-bezier(.37,0,.63,1)'
+            });
+
+            animation.onfinish = () => confetti.remove();
+        }
+
+        function getRandomColor() {
+            const colors = ['#ff4081', '#ffd700', '#00ff00', '#00ffff', '#ff00ff'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
+    <script>
+        // Add balloon effect
+        document.querySelector('.birthday-cake').addEventListener('mouseover', () => {
+            createBalloon();
+        });
+
+        function createBalloon() {
+            const balloon = document.createElement('div');
+            balloon.style.position = 'fixed';
+            balloon.style.width = '30px';
+            balloon.style.height = '40px';
+            balloon.style.backgroundColor = getRandomColor();
+            balloon.style.borderRadius = '50% 50% 50% 50% / 60% 60% 40% 40%';
+            balloon.style.left = Math.random() * window.innerWidth + 'px';
+            balloon.style.bottom = '-40px';
+            
+            // Add balloon string
+            const string = document.createElement('div');
+            string.style.position = 'absolute';
+            string.style.width = '2px';
+            string.style.height = '30px';
+            string.style.backgroundColor = '#000';
+            string.style.left = '14px';
+            string.style.bottom = '-25px';
+            balloon.appendChild(string);
+            
+            document.body.appendChild(balloon);
+
+            const animation = balloon.animate([
+                { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
+                { transform: `translateY(-${window.innerHeight}px) rotate(${Math.random() * 20 - 10}deg)`, opacity: 0 }
+            ], {
+                duration: 4000 + Math.random() * 2000,
+                easing: 'cubic-bezier(.37,0,.63,1)'
+            });
+
+            animation.onfinish = () => balloon.remove();
+        }
+
+        // Add sparkle effect
+        document.querySelector('.birthday-cake').addEventListener('dblclick', () => {
+            for(let i = 0; i < 20; i++) {
+                createSparkle();
+            }
+        });
+
+        function createSparkle() {
+            const sparkle = document.createElement('div');
+            sparkle.style.position = 'fixed';
+            sparkle.style.width = '5px';
+            sparkle.style.height = '5px';
+            sparkle.style.backgroundColor = '#FFD700';
+            sparkle.style.left = Math.random() * window.innerWidth + 'px';
+            sparkle.style.top = Math.random() * window.innerHeight + 'px';
+            sparkle.style.borderRadius = '50%';
+            sparkle.style.boxShadow = '0 0 10px #FFD700';
+            document.body.appendChild(sparkle);
+
+            const animation = sparkle.animate([
+                { transform: 'scale(1)', opacity: 1 },
+                { transform: 'scale(0)', opacity: 0 }
+            ], {
+                duration: 1000,
+                easing: 'ease-out'
+            });
+
+            animation.onfinish = () => sparkle.remove();
+        }
+    </script>
+
+</body>
+</html>
